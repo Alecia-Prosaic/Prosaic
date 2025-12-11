@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosaic × Google Cloud - AI-Powered Accounting Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div id="particles-js"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">PROSAIC</span>
+                <span class="logo-badge">× Google Cloud</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#integration">Integration</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="cta-button">Request Demo</button>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">AI-Powered</span> GST Compliance
+                    <span class="hero-subtitle">Built on Google Cloud</span>
+                </h1>
+                <p class="hero-description">
+                    Streamline tax compliance for accountants with our cloud-native platform.
+                    $10/month per client. Instant bank feeds. AI-driven automation.
+                </p>
+                <div class="hero-buttons">
+                    <button class="primary-btn" id="demo-trigger">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </button>
+                    <button class="secondary-btn" onclick="scrollToSection('integration')">
+                        <i class="fas fa-cloud"></i> See Integration
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <i class="fas fa-robot"></i>
+                        <h4>AI Categorization</h4>
+                    </div>
+                    <div class="card card-2">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Real-Time Reports</h4>
+                    </div>
+                    <div class="card card-3">
+                        <i class="fas fa-database"></i>
+                        <h4>Secure Storage</h4>
+                    </div>
+                </div>
+                <div class="dashboard-preview">
+                    <!-- 将使用CSS/JS创建动画仪表板 -->
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Cloud 集成展示 -->
+    <section id="integration" class="integration-section">
+        <div class="section-header">
+            <h2>Deep Google Cloud <span class="highlight">Integration</span></h2>
+            <p>How Prosaic leverages Google Cloud's powerful ecosystem</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card" data-service="ai">
+                <div class="service-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI & Machine Learning</h3>
+                <p>Google Cloud AI Platform powers intelligent transaction categorization and bulk cash coding</p>
+                <div class="tech-tags">
+                    <span>Vertex AI</span>
+                    <span>Vision AI</span>
+                    <span>AutoML</span>
+                </div>
+            </div>
+            
+            <div class="service-card" data-service="data">
+                <div class="service-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Data Processing</h3>
+                <p>Real-time bank feeds processed through Pub/Sub and Dataflow pipelines</p>
+                <div class="tech-tags">
+                    <span>Pub/Sub</span>
+                    <span>Dataflow</span>
+                    <span>BigQuery</span>
+                </div>
+            </div>
+            
+            <div class="service-card" data-service="storage">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Secure Storage</h3>
+                <p>Client financial data encrypted and stored in Cloud Storage with fine-grained access control</p>
+                <div class="tech-tags">
+                    <span>Cloud Storage</span>
+                    <span>Secret Manager</span>
+                    <span>IAM</span>
+                </div>
+            </div>
+            
+            <div class="service-card" data-service="compute">
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Scalable Compute</h3>
+                <p>Microservices architecture running on GKE with auto-scaling for peak tax periods</p>
+                <div class="tech-tags">
+                    <span>Kubernetes</span>
+                    <span>Cloud Run</span>
+                    <span>Compute Engine</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 架构图 -->
+    <section id="architecture" class="architecture-section">
+        <div class="section-header">
+            <h2>Cloud <span class="highlight">Architecture</span></h2>
+            <p>End-to-end data flow and processing pipeline</p>
+        </div>
+        <div class="architecture-diagram">
+            <div class="node" data-node="1">
+                <div class="node-icon"><i class="fas fa-university"></i></div>
+                <h4>Bank APIs</h4>
+                <p>Transaction Data</p>
+            </div>
+            <div class="connector animated"></div>
+            <div class="node" data-node="2">
+                <div class="node-icon"><i class="fas fa-broadcast-tower"></i></div>
+                <h4>Pub/Sub</h4>
+                <p>Real-time Ingestion</p>
+            </div>
+            <div class="connector animated"></div>
+            <div class="node" data-node="3">
+                <div class="node-icon"><i class="fas fa-cogs"></i></div>
+                <h4>Dataflow</h4>
+                <p>Stream Processing</p>
+            </div>
+            <div class="connector animated"></div>
+            <div class="node" data-node="4">
+                <div class="node-icon"><i class="fas fa-robot"></i></div>
+                <h4>AI Platform</h4>
+                <p>Categorization</p>
+            </div>
+            <div class="connector animated"></div>
+            <div class="node" data-node="5">
+                <div class="node-icon"><i class="fas fa-chart-bar"></i></div>
+                <h4>Dashboard</h4>
+                <p>Prosaic UI</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 交互演示 -->
+    <section id="demo" class="demo-section">
+        <div class="section-header">
+            <h2>Interactive <span class="highlight">Demo</span></h2>
+            <p>Experience the AI-powered workflow</p>
+        </div>
+        <div class="demo-container">
+            <div class="demo-controls">
+                <button class="demo-step active" data-step="1">Bank Connection</button>
+                <button class="demo-step" data-step="2">AI Processing</button>
+                <button class="demo-step" data-step="3">Report Generation</button>
+                <button class="demo-step" data-step="4">Client Approval</button>
+            </div>
+            <div class="demo-visualization">
+                <div class="demo-screen screen-1 active">
+                    <div class="transaction-stream">
+                        <!-- 动态交易流 -->
+                    </div>
+                </div>
+                <div class="demo-screen screen-2">
+                    <div class="ai-processing">
+                        <!-- AI处理动画 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区域 -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Transform Your Accounting Practice?</h2>
+                <p>Join the Google Cloud-powered revolution in tax compliance</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-globe"></i> <strong>Website:</strong> https://prosaic.info/</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> alecia@prosaic.info</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> New Zealand</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Request Solution Qualification</h3>
+                <form id="contactForm">
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Company Name">
+                    <textarea placeholder="Tell us about your accounting needs..." rows="4"></textarea>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Submit to Google Cloud
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">PROSAIC</div>
+            <p>AI-Powered GST Compliance Platform • Built on Google Cloud</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-google"></i> Google Cloud Partner</a>
+                <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+            <p class="copyright">© 2024 Prosaic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
